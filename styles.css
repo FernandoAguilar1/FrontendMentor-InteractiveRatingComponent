@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Primary */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+
+    --Medium-Grey-or: hsl(216, 12%, 54%);
+    --Medium-Grey: hsl(210, 19%, 18%);
+
+    --Dark-Blue-or: hsl(213, 19%, 18%);
+    --Dark-Blue: hsl(215, 22%, 15%);
+
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.rateSection {
+    background-color: var(--Dark-Blue);
+    width: 325px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 150px;
+}
+
+.rateSection__starContainer {
+    width: 40px;
+    height: 40px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+}
+
+.rateSection__starContainer__icon {
+    padding: 12px;
+}
+
+.rateSection__title {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.rateSection__description {
+    color: var(--Light-Grey);
+}
+
+.rateSection__rates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.rateSection__rates__button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    border: none;
+    color: var(--Light-Grey);
+}
+
+.rateSection__rates__button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor:pointer;
+}
+
+.rateSection__rates__button:focus{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    cursor:pointer;
+}
+
+
+.rateSection__submit {
+    background-color: var(--Orange);
+    width: 100%;
+    color: var(--White);
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+}
+
+.rateSection__submit:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor:pointer;
+}
+
+
+
+.thankSection {
+    background-color: var(--Dark-Blue);
+    width: 325px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 150px;
+    text-align: center;
+    display: none;
+}
+
+.thankSection__image {
+    width: 140px;
+}
+
+.thankSection__rating {
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    border-radius: 15px;
+    padding: 8px;
+    width: 165px;
+    margin-left: 80px;
+}
+
+.thankSection__title {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.thankSection__description{
+    color:var(--Light-Grey);
+    line-height: 1.5em;
+}
+
+
+footer {
+    margin-top: 100px;
+    color: gray;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width:750px) {
+    .rateSection {
+        width: 420px;
+        padding: 35px;
+    }
+
+    .rateSection__starContainer {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .rateSection__starContainer__icon {
+        padding: 17px;
+    }
+
+    .rateSection__title {
+        margin-top: 40px;
+    }
+
+    .rateSection__description {
+        font-size: 1.21em;
+    }
+
+    .rateSection__rates {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .rateSection__rates__button {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .thankSection {
+        width: 415px;
+    }
+
+    .thankSection__image {
+        width: 170px;
+    }
+
+    .thankSection__rating {
+        letter-spacing: 0.05em;
+        width: 195px;
+        margin-left: 105px;
+    }
+
+    .thankSection__title {
+        font-size: 1.8em;
+    }
+
+    .thankSection__description{
+        font-size: 1.10em;
+        letter-spacing: 0.05em;
+    }
+}
